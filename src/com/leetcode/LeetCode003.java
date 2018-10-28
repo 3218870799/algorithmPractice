@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class LeetCode3 {
+public class LeetCode003 {
 	/*
 	 * Leetcode3
 	 * 给定一个字符串，找出不含有重复字符的最长子串的长度。
