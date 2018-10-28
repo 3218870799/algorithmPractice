@@ -1,10 +1,10 @@
 package com.leetcode;
 
-public class LeetCode7 {
+public class LeetCode007 {
 	
 	public static void main(String[] args) {
-		LeetCode7 leetcode = new LeetCode7();
-		LeetCode7.Solution solution = leetcode.getSolution();
+		LeetCode007 leetcode = new LeetCode007();
+		LeetCode007.Solution solution = leetcode.getSolution();
 		int result = solution.reverse(123);
 		System.out.println(result);
 	}
