@@ -9,24 +9,79 @@
 | [排序](#常用排序) | [经典算法](#经典算法)|[矩阵](#矩阵相关) | [二叉树](#二叉树相关) |[窗口](#滑动窗口有关)|[功能函数](#常用功能函数)| [LeetCode题解](#LeetCode题解) |[待更](#待更)|[待更](#待更)| [待更](#待更)|[联系作者](#联系作者) |
 
 # 排序  :heart: 
-
- [基础认知：Java集合](https://www.cnblogs.com/nullering/p/9600821.html)
- 。。。。。。
+### 比较排序
+ [基础认知：Java集合](https://www.cnblogs.com/nullering/p/9600821.html)<br>
+ [冒泡排序](https://www.cnblogs.com/nullering/p/9537321.html)<br>
+ [选择排序](https://www.cnblogs.com/nullering/p/9537321.html)<br>
+ [直接插入排序](https://www.cnblogs.com/nullering/p/9537321.html)<br>
+ [快速排序](https://www.cnblogs.com/nullering/p/9537321.html)<br>
+ [归并排序](https://www.cnblogs.com/nullering/p/9537321.html)<br>
+ [堆排序](https://www.cnblogs.com/nullering/p/9537321.html)<br>
+### 非比较排序
+[计数排序](https://www.cnblogs.com/nullering/p/9556567.html)
+[基数排序](https://www.cnblogs.com/nullering/p/9556567.html)
+[桶排序]()
  
 # 经典算法 :traffic_light:
 
  [KMP算法](https://www.cnblogs.com/nullering/p/9536339.html)
  
+ 
 # 矩阵相关 :construction:
+>> [正反矩阵打印与之字打印](https://www.cnblogs.com/nullering/p/9558839.html)
 
 # 二叉树相关 :ocean:
+>> [二叉树认知](https://www.cnblogs.com/nullering/p/9564802.html)
 
 # 窗口相关 :ferris_wheel:
-
+<br>
+<br>
+<br>
+<br>
 # 常用功能函数 :mountain_cableway:
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 # LeetCode题解 :aerial_tramway:
 
+<br>
+<br>
+<br>
+<br>
+>> 该部分答案多为本人刷题的题解,部分问题没有官方解答，所以贡献一份思路，并将最优解答Copy至此,便于向高手学习
+
+>> 请移步[LeetCode]()<br>
+>> [答案](https://github.com/3218870799/algorithmPractice/tree/master/src/com/leetcode)
+
 # 联系作者 :hibiscus:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 # 待更 :four_leaf_clover:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
