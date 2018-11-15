@@ -5,32 +5,35 @@ public class LeetCode021 {
 	public static void main(String[] args) {
 		LeetCode021 leetcode = new LeetCode021();
 		LeetCode021.Solution solution = leetcode.getSolution();
-		String s = "()[]{}";
-		boolean result = solution.isValid(s);
 		
-		System.out.println(result);
+		
 	}
 
 	public Solution getSolution(){
 		return new Solution();
 	}
+	public class ListNode {
+	     int val;
+	     ListNode next;
+	     ListNode(int x) { val = x; }
+	 }
 	
 	class Solution {
-	    public boolean isValid(String s) {
-	        char[] stack = new char[s.length() + 1];
-	        int top = 1;
-	        for (char c : s.toCharArray()) {
-	            if (c == '(' || c == '[' || c == '{') {
-	                stack[top++] = c; 
-	            } else if (c == ')' && stack[--top] != '(') {
-	                return false;
-	            } else if (c == ']' && stack[--top] != '[') {
-	                return false;
-	            } else if (c == '}' && stack[--top] != '{') {
-	                return false;
+	    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+	        ListNode head = new ListNode(0);
+	        ListNode temp = head;
+	        while (l1 != null && l2 != null) {
+	            if (l1.val < l2.val) {
+	                temp.next = l1;
+	                l1 = l1.next;
+	            } else {
+	                temp.next = l2;
+	                l2 = l2.next;
 	            }
+	            temp = temp.next;
 	        }
-	        return top == 1;
+	        temp.next = l1 != null ? l1 : l2;
+	        return head.next;
 	    }
 	}
 }
