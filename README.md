@@ -57,8 +57,10 @@
 <br>
 >> 该部分答案多为本人刷题的题解,部分问题没有官方解答，所以贡献一份思路，并将最优解答Copy至此,便于向高手学习
 
->> 请移步[LeetCode]()<br>
->> [答案](https://github.com/3218870799/algorithmPractice/tree/master/src/com/leetcode)
+>> 题目描述请移步[LeetCode](https://leetcode-cn.com/)<br>
+| 数组题目 | 答案链接 |
+|:-------:|:-------:|
+|15:三数之和| [答案]() |
 
 # 联系作者 :hibiscus:
 <br>
