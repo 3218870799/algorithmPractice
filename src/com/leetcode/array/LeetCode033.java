@@ -20,20 +20,24 @@ public class LeetCode033 {
 	 */
 	class Solution {
 	    public int search(int[] nums, int target) {
-	        int l = 0, r = nums.length - 1, mid;
-	        while (l <= r) {
-	            mid = l + r >>> 1;
-	            if (nums[mid] == target) return mid;
-	            else if (nums[mid] >= nums[l]) {
-	                if (nums[l] <= target && target < nums[mid]) r = mid - 1;
-	                else l = mid + 1;
-	            } else {
-	                if (nums[mid] < target && target <= nums[r]) l = mid + 1;
-	                else r = mid - 1;
-	            }
-	        }
-	        return -1;
+	    	int left =0,right = nums.length-1,mid;
+	    	while(left<=right){
+		    	mid=left + right>>>1;
+	    		if(nums[mid]==target)
+	    			return mid;
+	    		else if(nums[mid]>=nums[left]){
+	    			if(nums[left]<=target&&nums[mid]>=target)
+	    				right=mid-1;
+	    			else
+	    				left = mid+1;
+	    		}else{
+	    			if(target<=nums[right]&&target>nums[mid])
+	    				left = mid +1;
+	    			else
+	    				right = mid-1;
+	    		}
+	    	}
+	    	return -1;
 	    }
 	}
-	
 }
