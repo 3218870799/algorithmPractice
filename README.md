@@ -7,8 +7,19 @@
 # Java深入理解与源码分析
 
 ## 基本的程序设计结构 :traffic_light:
->> [基本数据类型与引用数据类型的传递方式](http://cheerui.cn/2018/11/11/java%E7%9C%9F%E7%9A%84%E5%8F%AA%E6%9C%89%E5%80%BC%E4%BC%A0%E9%80%92/)
->> [Java中的四种引用类型](https://juejin.im/post/5a5129f5f265da3e317dfc08)
+### 数据类型
+
+>> [为什么Java要把字符串设计成不可变的](http://www.hollischuang.com/archives/1246)<br>
+
+>> [基本数据类型与引用数据类型的传递方式](http://cheerui.cn/2018/11/11/java%E7%9C%9F%E7%9A%84%E5%8F%AA%E6%9C%89%E5%80%BC%E4%BC%A0%E9%80%92/)<br>
+
+>> [Java中的四种引用类型](https://juejin.im/post/5a5129f5f265da3e317dfc08)<br>
+
+### 关键字
+
+>> [彻底搞懂volatile关键字](https://iamshuaidi.github.io/2018/08/20/java/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8(%E4%B8%8A)--%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82volatile%E5%85%B3%E9%94%AE%E5%AD%97/)<br>
+
+
 
 # 数据结构
 
