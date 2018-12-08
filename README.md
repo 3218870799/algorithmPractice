@@ -92,9 +92,11 @@ https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 >> [一致性哈希](https://www.cnblogs.com/nullering/p/9536339.html)<br>
 
 # 常用功能函数 
->> [MD5加密简单示例]()<br>
 >> [求最大公约数与最小公倍数]()<br>
 >> [组合]()<br>
+>> 常用加密算法<br>
+>>>> Base64加密Demo<br>
+>>>> MD5加密Demo<br>
 <br>
 <br>
 <br>
