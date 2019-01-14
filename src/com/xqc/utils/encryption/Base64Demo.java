@@ -1,4 +1,4 @@
-package com.xqc.function.encryption;
+package com.xqc.utils.encryption;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Base64;
@@ -11,12 +11,7 @@ public class Base64Demo {
 		jdkDemo();
 	}
 
-	static String str = "Test";
-
-	/**
-	 * commons codec 实现Base64加密解密
-	 */
-	
+	static String str = "Test";	
 /*	
 	Maven地址
 	
@@ -28,7 +23,9 @@ public class Base64Demo {
 		</dependency>*/
 
 	
-	
+	/**
+	 * commons codec 实现Base64加密解密
+	 */
 	public static void CommonsCodecDemo() {
 		// 加密:
 		byte[] encodeBytes = org.apache.commons.codec.binary.Base64.encodeBase64(str.getBytes());
@@ -38,10 +35,7 @@ public class Base64Demo {
 		System.out.println("commons codec实现base64解密：    " + new String(decodeBytes));
 	}
 
-	/**
-	 * bouncy castle实现Base64加密解密
-	 * 
-	 */
+
 /*	
   Maven地址
      <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
@@ -49,10 +43,12 @@ public class Base64Demo {
 		    <groupId>org.bouncycastle</groupId>
 		    <artifactId>bcprov-jdk15on</artifactId>
 		    <version>1.56</version>
-		</dependency>
-		
-		
+		</dependency>		
 		*/
+	/**
+	 * bouncy castle实现Base64加密解密
+	 * 
+	 */
 	public static void bouncyCastleDemo() {
 		// 加密
 		byte[] encodeBytes = org.bouncycastle.util.encoders.Base64.encode(str.getBytes());
