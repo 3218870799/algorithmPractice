@@ -119,10 +119,9 @@ https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 >> [数据类型转换工具类]()<br>
 
 >> [常见加密算法工具类]()<br>
-<br>
 >>>> Base64加密Demo<br>
 >>>> MD5加密Demo<br>
-<br>
+
 >> [字符串处理工具类]()<br>
 >> [求最大公约数与最小公倍数]()<br>
 >> [组合]()<br>
