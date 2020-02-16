@@ -1,8 +1,5 @@
 package com.leetcode.linkedList;
 
-import java.util.List;
-
-import com.leetcode.LeetCode023.ListNode;
 
 public class LeetCode024 {
 	

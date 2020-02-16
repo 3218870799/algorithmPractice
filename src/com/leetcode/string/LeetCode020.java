@@ -1,7 +1,5 @@
 package com.leetcode.string;
 
-import java.util.List;
-
 public class LeetCode020 {
 	
 	public static void main(String[] args) {

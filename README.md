@@ -74,6 +74,18 @@
 
 https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 
+## 基础算法:four_leaf_clover:
+>> 枚举<br>
+>> 递推<br>
+>> 贪心<br>
+>> 递归<br>
+>> 分治<br>
+>> 构造<br>
+>> 模拟<br>
+>> 排序<br>
+>> 检索<br>
+
+
 ## 排序  :heart: 
 >> ### 比较排序
 >> [基础认知：Java集合](https://www.cnblogs.com/nullering/p/9600821.html)<br>

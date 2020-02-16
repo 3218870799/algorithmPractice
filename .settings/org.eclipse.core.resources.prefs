@@ -1,2 +1,8 @@
 eclipse.preferences.version=1
+encoding//src/com/xqc/function/PageResultBean.java=UTF-8
+encoding//src/com/xqc/function/ResultBean.java=UTF-8
+encoding//src/com/xqc/util/weixinpay/Pay.java=UTF-8
+encoding//src/com/xqc/util/weixinpay/WeixinApiResultImpl.java=UTF-8
+encoding//src/com/xqc/utils/conver/ConvertHelper.java=UTF-8
+encoding//src/com/xqc/utils/stringHelp/StringHelper.java=UTF-8
 encoding/README.md=UTF-8
