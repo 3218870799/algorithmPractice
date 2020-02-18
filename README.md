@@ -62,7 +62,6 @@
 ## 二叉树相关 :ocean:
 >> [二叉树认知](https://www.cnblogs.com/nullering/p/9564802.html)
 
-
 ## 窗口相关 :ferris_wheel:
 <br>
 <br>
@@ -100,28 +99,33 @@ https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 >> [基数排序](https://www.cnblogs.com/nullering/p/9556567.html)<br>
 >> [桶排序]()<br>
 
-## KMP算法 :mountain_cableway:
+## 典型基础 :mountain_cableway:
 >> [KMP算法](https://www.cnblogs.com/nullering/p/9536339.html)<br>
-
-## 布隆过滤器
 >> [布隆过滤器](https://www.cnblogs.com/nullering/p/9536339.html)<br>
-
-## 一致性哈希
 >> [一致性哈希](https://www.cnblogs.com/nullering/p/9536339.html)<br>
 
+## 二叉树
+>> [形象打印二叉树](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/binartTree/IsBSTAndCBT.java)<br>
+>> [判断是否是平衡二叉树]()<br>
 ## 图论相关算法
+>> [广度优先搜索BFS](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/classic/BFS.java)<br>
 >> [Warshall算法]()<br>
 >> [Floyed算法]()<br>
 >> [Prim算法]()<br>
 >> [Kruskal算法]()<br>
 >> [Dijkstra算法]()<br>
+>> [并查集]()<br>
 
-
+## 计算
+>> [求最大公约数与最小公倍数](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/function/Calauate.java)<br>
+>> [组合](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/function/Combination.java)<br>
+>> [大数加法减法乘法]()<br>
 
 # 四：经典问题
 >> [旅行商问题]()<br>
 >> [凸包问题]()<br>
 >> [曼哈顿问题]()<br>
+>> [n皇后问题]()<br>
 
 
 # 五：常用功能类与功能函数
@@ -135,8 +139,6 @@ https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 >>>> MD5加密Demo<br>
 
 >> [字符串处理工具类]()<br>
->> [求最大公约数与最小公倍数]()<br>
->> [组合]()<br>
 <br>
 <br>
 <br>
