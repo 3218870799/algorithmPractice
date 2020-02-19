@@ -116,11 +116,12 @@ https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 >> [Dijkstra算法]()<br>
 >> [并查集]()<br>
 
-## 计算
+## 数论计算
 >> [求最大公约数与最小公倍数](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/function/Calauate.java)<br>
 >> [组合](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/function/Combination.java)<br>
 >> [大数加法减法乘法]()<br>
-
+>> [矩阵]()<br>
+>> [线性筛]()<br>
 # 四：经典问题
 >> [旅行商问题]()<br>
 >> [凸包问题]()<br>
