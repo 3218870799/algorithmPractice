@@ -1,13 +1,14 @@
 package com.xqc.classic;
-
+/**
+ * @author xqc
+ * @data 2020年2月17日
+ * Description:如何判断一个元素在亿级数据中是否存在
+ * 
+ */
 public class BloomFilters {
-	   /**
-	    * 数组长度
-	    */
+	   // 数组长度
 	   private int arraySize;
-	   /**
-	    * 数组
-	    */
+
 	   private int[] array;
 	   public BloomFilters(int arraySize) {
 	       this.arraySize = arraySize;

@@ -1,66 +1,115 @@
 package com.xqc.classic;
 
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.Stack;
-
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
 /**
- * Implementation of a Breadth First Search
- *
- * @author Unknown
- *
+ * 广度优先遍历
+ * @author xqc
+ * @data 2020年2月17日
+ * Description:
  */
-public class BFS{
+public class BFS {
+    /**
+     * 存放节点关系的hashtable，图以邻接表（出边表）表示
+     * @param graph
+     * @param dist 顶点s到各边的距离
+     * @param s 顶点
+     * Description:使用队列实现，将第一个加入到队列，
+     * 当队列不为空，取出一个节点，将其未访问过的子节点加入到队列中
+     * 直至队列为空
+     * 
+     */
+    public static void bfs(HashMap<Character, LinkedList<Character>> graph, HashMap<Character, Integer> dist, Character s) {
+        //建立队列
+        Queue<Character> q = new LinkedList<>();
+        //给定起始节点
+        Character start = s;
+        //起始节点放到距离表中
+        dist.put(start, 0);
+        ((LinkedList<Character>) q).add(start);
+        //当队列不为空时
+        while (q != null) {
+            //取出队首元素
+            Character poll = q.poll();
+            if(poll == null){
+                break;
+            }
+            Integer distance = dist.get(poll);
+            System.out.println("节点" + poll + "到起始节点" + start + "的距离为" + distance);
+            distance++;
+            //遍历该节点的邻接表中的每一个节点，如未访问过，将邻接节点加入
+            for (Character c : graph.get(poll)) {
+                //未访问过即节点距离没有加入到dist的hashmap中
+                if (!dist.containsKey(c)) {
+                    dist.put(c, distance);
+                    //当队列为空时候，使用add方法会报错，而offer方法会返回false。
+                    //作为List使用时,一般采用add / get方法来 压入/获取对象。
+                    //作为Queue使用时,才会采用 offer/poll/take等方法作为链表对象时,
+                    //offer等方法相对来说没有什么意义这些方法是用于支持队列应用的。
+                    q.offer(c);
+                   
+                }
+            }
+        }
 
-	/**
-	 * The BFS implemented in code to use.
-	 *
-	 * @param a Structure to perform the search on a graph, adjacency matrix etc.
-	 * @param vertices The vertices to use
-	 * @param source The Source
-	 */
-	public static void bfsImplement(byte [][] a,int vertices,int source){  //passing adjacency matrix and no of vertices
-		byte []b=new byte[vertices];    //flag container containing status of each vertices
-		Arrays.fill(b,(byte)-1);   //status initialization
-		/*       code   status
-				 -1  =  ready
-				  0  =  waiting
-				  1  =  processed       */
+    }
+    
+    public static void main(String[] args) {
+        HashMap<Character, LinkedList<Character>> graph = new HashMap<>();
+        HashMap<Character, Integer> dist = new HashMap<>();
 
-		Stack st = new Stack(vertices);//operational stack
-		st.push(source);                                                 //assigning source
-		while(!st.isEmpty()){
-			b[st.peek()]=(byte)0;                                   //assigning waiting status
-			System.out.println(st.peek());
-			int pop=st.peek();
-			b[pop]=(byte)1;               //assigning processed status
-			st.pop();                  //removing head of the queue
-			for(int i=0;i<vertices;i++){
-				if(a[pop][i]!=0 && b[i]!=(byte)0 && b[i]!=(byte)1 ){
-					st.push(i);
-					b[i]=(byte)0;                        //assigning waiting status
-				}}}
-	}
+        // s顶点的邻接表
+        LinkedList<Character> list_s = new LinkedList<Character>();
+
+        list_s.add('A');
+
+        list_s.add('B');
+
+        LinkedList<Character> list_a = new LinkedList<Character>();
+
+        list_a.add('C');
+
+        list_a.add('D');
+
+        LinkedList<Character> list_b = new LinkedList<Character>();
+
+        list_b.add('D');
+
+        list_b.add('E');
+
+        LinkedList<Character> list_c = new LinkedList<Character>();
+
+        list_c.add('E');
+
+        LinkedList<Character> list_d = new LinkedList<Character>();
+
+        list_c.add('E');
 
 
-	/**
-	 * The main method
-	 *
-	 * @param args Command line arguments
-	 */
-		public static void main(String args[]){
-		Scanner in=new Scanner(System.in);
-		int vertices=in.nextInt(),source=in.nextInt();
-		byte [][]a=new byte [vertices][vertices];
-		//initially all elements of a are initialized with value zero
+        //构造图
 
-		for(int i=0;i<vertices;i++){
-			int size =in.nextInt();
-			for(int j=0;j<size;j++){
-				a[i][in.nextInt()]=1;      //taking adjacency entries by assigning 1
-			}
-		}
-		bfsImplement(a,vertices,source);         //function call
-		in.close();
-	}
+        graph.put('S', list_s);
+
+        graph.put('A', list_a);
+
+        graph.put('B', list_b);
+
+        graph.put('C', list_c);
+
+        graph.put('D', list_d);
+
+        graph.put('E', new LinkedList<Character>());
+
+
+        //调用
+
+       BFS.bfs(graph, dist, 'S');
+
+    }
+
 }
+
+
+
+

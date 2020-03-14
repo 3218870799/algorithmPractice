@@ -2,9 +2,14 @@ package com.xqc.binartTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+/**
+ * @author xqc
+ * @data 2020年2月17日
+ * Description:判断是否是二叉搜索树（又二叉排序树，左<根<右）
+ */
 public class IsBSTAndCBT {
 
+	//二叉树节点
 	public static class Node {
 		public int value;
 		public Node left;
@@ -15,6 +20,11 @@ public class IsBSTAndCBT {
 		}
 	}
 
+	/**
+	 * 判断是否是二叉树
+	 * @param head
+	 * @return 是二叉树返回true 不是返回false
+	 */
 	public static boolean isBST(Node head) {
 		if (head == null) {
 			return true;
@@ -26,6 +36,7 @@ public class IsBSTAndCBT {
 		while (cur1 != null) {
 			cur2 = cur1.left;
 			if (cur2 != null) {
+				//cur2指向左子树最右边的节点
 				while (cur2.right != null && cur2.right != cur1) {
 					cur2 = cur2.right;
 				}
@@ -74,7 +85,7 @@ public class IsBSTAndCBT {
 		return true;
 	}
 
-	// for test -- print tree
+	// 形象打印二叉树
 	public static void printTree(Node head) {
 		System.out.println("Binary Tree:");
 		printInOrder(head, 0, "H", 17);
@@ -94,7 +105,11 @@ public class IsBSTAndCBT {
 		System.out.println(getSpace(height * len) + val);
 		printInOrder(head.left, height + 1, "^", len);
 	}
-
+	/**
+	 * 获取合适的空格
+	 * @param num
+	 * @return
+	 */
 	public static String getSpace(int num) {
 		String space = " ";
 		StringBuffer buf = new StringBuffer("");

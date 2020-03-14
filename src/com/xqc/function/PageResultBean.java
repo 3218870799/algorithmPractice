@@ -3,7 +3,7 @@ package com.xqc.function;
 import java.io.Serializable;
 public class PageResultBean<T> extends ResultBean<T> implements Serializable {
 
-	// 总记录数
+	   // 总记录数
 	   private long totalRecord;
 	   //总页数
 	   private int pageCount;

@@ -32,10 +32,8 @@ public class CountSort {
         }
         for(int i=length-1;i>=0;i--)//遍历A数组，构造B数组
         {
-            
             B[count[array[i]]-1]=array[i];//将A中该元素放到排序后数组B中指定的位置
-            count[array[i]]--;//将C中该元素-1，方便存放下一个同样大小的元素
-            
+            count[array[i]]--;//将C中该元素-1，方便存放下一个同样大小的元素           
         }
         return B;//将排序好的数组返回，完成排序
         
