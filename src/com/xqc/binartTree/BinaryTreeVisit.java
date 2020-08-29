@@ -10,7 +10,7 @@ import java.util.Stack;
  * Description:
  * 二叉树遍历方式
  */
-public class VisitBinaryTree {
+public class BinaryTreeVisit {
 
     /**
      * @author xqc

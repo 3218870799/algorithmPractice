@@ -1,5 +1,17 @@
 package com.xqc.classic;
 
+/**
+ * 
+ * @author xqc
+ * @data 2020年3月21日
+ * Description:Manacher算法，主要解决如何找到字符串中的最长回文子串
+ * 暴力解：找中间，判断i+1和i-1个是否相等，奇偶问题加上#号完全变成奇数
+ * [L          x= 2*id -i        id        i          R]
+ * [左边界                i关于id的对称点x      中点id     i点            右边界]
+ * 情况一：以x为中心的回文子串包含在id的范围内
+ * 情况二：以x为中心的回文子串超过id的回文子串的左边界
+ * 
+ */
 public class Manacher {
 	
 	public static void main(String[] args) {

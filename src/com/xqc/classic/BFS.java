@@ -10,7 +10,62 @@ import java.util.Queue;
  * Description:
  */
 public class BFS {
-    /**
+	
+	private void bfs1(boolean[] isVisited,int i) {
+		//表示队列的头节点对应的下标
+		int u;
+		//邻接节点w
+		int w;
+		//队列，记录节点访问的顺序
+		LinkedList queue = new LinkedList();
+		//访问节点，输出节点信息
+		System.out.println(i+"--->");
+		//标记为已访问
+		isVisited[i] = true;
+		//将节点加入到队列
+		queue.addLast(i);
+		while(!queue.isEmpty()){
+			//取出队列的头节点的下标
+			u = (Integer)queue.removeFirst();
+			//得到第一个邻接节点的下标w
+			w = getFirstNeighbor(u);
+			//找到
+			while(w!= -1){
+				//是否被访问过
+				if(!isVisited[w]){
+					System.out.println(w+" ——>");
+					//标记为已经访问
+					isVisited[w] = true;
+					//入队
+					queue.addLast(w);
+				}
+				//以u为前驱点，找到w后面的下一个邻接点
+				w = getNextNeighbor(u,w);
+			}
+		}
+		
+	}
+	
+	
+	
+	
+    private int getNextNeighbor(int u, int w) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+
+	private int getFirstNeighbor(int u) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+
+	/**
      * 存放节点关系的hashtable，图以邻接表（出边表）表示
      * @param graph
      * @param dist 顶点s到各边的距离

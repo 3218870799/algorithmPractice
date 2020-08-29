@@ -2,6 +2,12 @@ package com.xqc.sort;
 
 import java.util.Arrays;
 
+/**
+ * @author xqc
+ * @data 2020年5月24日
+ * Description:
+ * 冒泡排序
+ */
 public class BubleSort {
 	public static void main(String[] args) {
 		//步骤1：初始化数组

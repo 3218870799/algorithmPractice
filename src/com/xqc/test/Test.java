@@ -27,7 +27,7 @@ public class Test {
 		
 		System.out.println(my.iterator());*/
 		
-		Queue my =  new LinkedList();
+/*		Queue my =  new LinkedList();
 		long start = System.currentTimeMillis();
 		
 		int j=0;
@@ -38,7 +38,7 @@ public class Test {
 		
 		long end = System.currentTimeMillis();
 		
-		System.out.println("共执行"+ (end -start));
+		System.out.println("共执行"+ (end -start));*/
 		
 /*		System.out.println(my.add(1));
 		System.out.println(my.add(2));

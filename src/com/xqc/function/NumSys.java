@@ -9,18 +9,42 @@ public class NumSys {
 	public static void main(String[] args) {
 		
 		//找出从101,到200的所有素数
-		getPrimeNum(101,200);
+		//getPrimeNum(101,200);
 		
 		//求6和8的最大公约数和最小公倍数
-        CommonMultiply(6, 8);
+ /*       CommonMultiply(6, 8);
         Map map = ReturnGcdAndLcm(5,9);
         System.out.println(map.get("gcd"));
-        System.out.println(map.get("lcm"));
+        System.out.println(map.get("lcm"));*/
+        
+        
+        //求n的所有因数
+        int[] result = GetFactorArray(30);
+        for (int i : result) {
+        	if(i!=0)System.out.println(i);
+		}
         
         //求数组中的众数
-		int[] a ={2,4,5,6,2,4,4,6};
+/*		int[] a ={2,4,5,6,2,4,4,6};
 		int most = GetMostNum(a);
-		System.out.println(most);
+		System.out.println(most);*/
+	}
+	//求n的所有因子并存放到数组中返回
+	private static int[] GetFactorArray(int n) {
+		// TODO Auto-generated method stub
+		int[] result = new int[n];
+		result[0]=1;
+		result[1]=n;
+		int count=2;
+		for (int i = 2; i < Math.sqrt(n); i++) {
+			if(n%i==0){
+				result[count++]=i;
+				result[count++]=n/i;
+			}
+		}
+		
+		
+		return result;
 	}
 
 	/**

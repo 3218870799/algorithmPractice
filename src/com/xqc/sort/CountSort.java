@@ -1,7 +1,13 @@
 package com.xqc.sort;
 
 import java.util.Arrays;
-
+/**
+ * 
+ * @author xqc
+ * @data 2020年5月24日
+ * Description:
+ * 计数排序
+ */
 public class CountSort {
 	
     public static void main(String[] args)

@@ -50,17 +50,34 @@
 
 # 二：数据结构
 
->> [2-3树]()<br>
->> [BST树]()<br>
->> [AVL树]()<br>
->> [RBT红黑树]()<br>
->> [哈夫曼树]()<br>
+## 数组
+<br>
+
+## 链表
+<br>
+
+## 栈
+
+<br>
+
+## 队列
+
 
 ## 矩阵相关 :construction:
 >> [正反矩阵打印与之字打印](https://www.cnblogs.com/nullering/p/9558839.html)
 
 ## 二叉树相关 :ocean:
 >> [二叉树认知](https://www.cnblogs.com/nullering/p/9564802.html)
+
+>> [2-3树]()<br>
+>> [BST树]()<br>
+>> [AVL树]()<br>
+>> [RBT红黑树]()<br>
+>> [哈夫曼树]()<br>
+
+>> [形象打印二叉树](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/binartTree/IsBSTAndCBT.java)<br>
+>> [判断是否是平衡二叉树]()<br>
+
 
 ## 窗口相关 :ferris_wheel:
 <br>
@@ -104,9 +121,7 @@ https://www.cnblogs.com/nullering/p/9536339.html欢迎各位指导！
 >> [布隆过滤器](https://www.cnblogs.com/nullering/p/9536339.html)<br>
 >> [一致性哈希](https://www.cnblogs.com/nullering/p/9536339.html)<br>
 
-## 二叉树
->> [形象打印二叉树](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/binartTree/IsBSTAndCBT.java)<br>
->> [判断是否是平衡二叉树]()<br>
+
 ## 图论相关算法
 >> [广度优先搜索BFS](https://github.com/3218870799/algorithmPractice/blob/master/src/com/xqc/classic/BFS.java)<br>
 >> [Warshall算法]()<br>

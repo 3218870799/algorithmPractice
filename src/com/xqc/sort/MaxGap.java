@@ -6,8 +6,7 @@ public class MaxGap {
 		//如果数组为空或者为一没有最大差值
 		if (nums == null || nums.length < 2) {
 			return 0;
-		}
-		
+		}		
 		int len = nums.length;
 		int min = Integer.MAX_VALUE;
 		int max = Integer.MIN_VALUE;
