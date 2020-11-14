@@ -24,7 +24,7 @@ public class HttpClientUtil {
      * @param xmlData  ²ÎÊý
      * @return org.apache.http.HttpResponse
      * ÎÄµµ£ºhttp://hc.apache.org/httpcomponents-core-ga/httpcore/apidocs/org/apache/http/HttpResponse.html?is-external=true
-     * @throws ClientProtocolException
+     * @throws
      * @throws IOException
      */
     public static HttpResponse sendXMLDataByPost(String url, String xmlData)

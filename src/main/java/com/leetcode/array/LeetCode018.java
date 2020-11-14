@@ -35,13 +35,13 @@ public class LeetCode018 {
 	    }
 
 	    private List<List<Integer>> kSum(int[] nums, int start, int k, int target) {
-	        List<List<Integer>> res = new ArrayList<>();
+	        List<List<Integer>> res = new ArrayList<List<Integer>>();
 	        if (k == 2) {
 	            int left = start, right = nums.length - 1;
 	            while (left < right) {
 	                int sum = nums[left] + nums[right];
 	                if (sum == target) {
-	                    List<Integer> twoSum = new LinkedList<>();
+	                    List<Integer> twoSum = new LinkedList<Integer>();
 	                    twoSum.add(nums[left]);
 	                    twoSum.add(nums[right]);
 	                    res.add(twoSum);

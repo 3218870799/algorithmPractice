@@ -48,7 +48,7 @@ class Solution {
     }
     public List<List<Integer>> pacificAtlantic(int[][] matrix) {
     	//结果坐标集合，既能到太平洋又能到大西洋的坐标集合
-        List<List<Integer>> ans = new ArrayList<>();
+        List<List<Integer>> ans = new ArrayList<List<Integer>>();
         if (matrix == null || matrix.length == 0)
             return ans;
         //列数

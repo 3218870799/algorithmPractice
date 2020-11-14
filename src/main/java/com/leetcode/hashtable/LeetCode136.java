@@ -19,7 +19,7 @@ public class LeetCode136 {
 	class Solution {
 	    public int singleNumber(int[] nums) {
 	        int n = nums[0];
-	        Map<Integer, Integer> map = new HashMap<>();
+	        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 	        map.put(n, 1);
 	        for (int j = 1; j < nums.length; j++) {
 	           if (!map.containsKey(nums[j])) {

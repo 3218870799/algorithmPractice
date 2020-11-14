@@ -12,7 +12,7 @@ public class ShoppingOffer {
 		//
 		List<Integer> libao1 = Arrays.asList(3,0,5);
 		List<Integer> libao2 = Arrays.asList(1,2,10);
-		List<List<Integer>> offer = new ArrayList<>();
+		List<List<Integer>> offer = new ArrayList<List<Integer>>();
 		offer.add(libao1);
 		offer.add(libao2);
 		List<Integer> needs = Arrays.asList(3,2);
