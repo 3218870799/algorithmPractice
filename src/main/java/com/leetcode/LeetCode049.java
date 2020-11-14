@@ -53,7 +53,7 @@ public class LeetCode049 {
 	 */
 	class Solution{
 		public List<List<String>> groupAnagrams(String[] strs){
-			if(strs.length==0) return new ArrayList<>();
+			if(strs.length==0) return new ArrayList<List<String>>();
 			Map<String,List> ans = new HashMap<String,List>();
 			int[] count = new int[26];
 			for(String s:strs){

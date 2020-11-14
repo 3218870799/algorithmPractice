@@ -10,12 +10,12 @@ public class FindRepeatNumber {
 		System.out.println(findRepeatNumber(nums));
 		
 	}
-	//·½·¨Ò»£ºÊ¹ÓÃhash±í£¬setÖĞÖ»ÄÜ´æ·Å²»ÖØ¸´µÄÊı×Ö£¬Èç¹ûÃ»ÓĞÕÒµ½£¬·µ»Ø-1
+	//æ–¹æ³•ä¸€ï¼šä½¿ç”¨hashè¡¨ï¼Œsetä¸­åªèƒ½å­˜æ”¾ä¸é‡å¤çš„æ•°å­—ï¼Œå¦‚æœæ²¡æœ‰æ‰¾åˆ°ï¼Œè¿”å›-1
 	private static int findRepeatNumber(int[] nums) {
 		int res = -1;
 		Set<Integer> set = new HashSet<Integer>();
 		for(int num:nums) {
-			//Èç¹ûÍùsetÖĞ×¢Èë³É¹¦£¬Ôò·µ»Øtrue£¬Èç¹ûÖØ¸´ÔòÌí¼ÓÊ§°Ü£¬·µ»Øfalse
+			//å¦‚æœå¾€setä¸­æ³¨å…¥æˆåŠŸï¼Œåˆ™è¿”å›trueï¼Œå¦‚æœé‡å¤åˆ™æ·»åŠ å¤±è´¥ï¼Œè¿”å›false
 			if(!set.add(num)) {
 				res = num;
 				break;
