@@ -7,7 +7,7 @@ public class FindRepeatNumber {
 	
 	public static void main(String[] args) {
 		int[] nums = {2,3,1,0,2,5,3};
-		findRepeatNumber(nums);
+		System.out.println(findRepeatNumber(nums));
 		
 	}
 	//方法一：使用hash表，set中只能存放不重复的数字，如果没有找到，返回-1
