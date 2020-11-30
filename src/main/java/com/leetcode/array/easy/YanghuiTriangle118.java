@@ -41,6 +41,10 @@ public class YanghuiTriangle118 {
 
     /**
      * 返回List<list<Integer>>
+     * 两个List指针分别指向上一行和当前行
+     * 第一行初始为1
+     * 从第二行开始遍历
+     * 当前行第一个为1，中间为currentList.add( last.get(j)+last.get(j-1));最后一个为1
      *
      * @param numRows
      * @return
