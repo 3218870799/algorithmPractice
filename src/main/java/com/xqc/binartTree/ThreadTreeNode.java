@@ -6,7 +6,9 @@ package com.xqc.binartTree;
  * Description:
  * 中序化线索二叉树节点
  */
+
 public class ThreadTreeNode {
+/**
 	//节点的权
 	int value;
 	//左儿子
@@ -158,6 +160,6 @@ public class ThreadTreeNode {
 			parent.delete(i);
 		}
 	}
-
+**/
 }
 
