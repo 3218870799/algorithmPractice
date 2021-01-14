@@ -13,8 +13,10 @@ import java.util.Scanner;
  */
 public class DisJointSet {
 	static int maxn = 10000+10;
-	static int[] parent;//保存祖先
-	static int[] rank ;//rank记录每个树的高度
+	//保存祖先
+	static int[] parent;
+	//rank记录每个树的高度
+	static int[] rank ;
 	/**
 	 * 并查集初始化
 	 */
@@ -22,7 +24,8 @@ public class DisJointSet {
 		parent = new int[maxn];
 		rank =new int[maxn];
 		for(int i = 0;i<maxn;i++){
-			parent[i]=i;//初始化父节点为自己
+			//初始化父节点为自己
+			parent[i]=i;
 		    rank[i]=1;
 		}
 	}
