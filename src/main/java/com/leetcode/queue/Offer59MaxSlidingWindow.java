@@ -46,7 +46,7 @@ public class Offer59MaxSlidingWindow {
         if (nums.length == 0 || k == 0) {
         	return new int[0];
 		}
-        //单调队列，用链表实现
+        //单调队列，队列递减，用链表实现
         Deque<Integer> deque = new LinkedList<>();
         //定义返回结果数组
         int[] res = new int[nums.length - k + 1];
