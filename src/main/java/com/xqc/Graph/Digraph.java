@@ -1,5 +1,6 @@
 package com.xqc.Graph;
 
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -24,7 +25,9 @@ public class Digraph {
         this.adj = new Queue[V];
         //初始化邻接表中的空队列
         for (int i = 0; i < adj.length; i++) {
-            adj[i] = new Queue<Integer>();
+            //adj[i] = new Queue<Integer>();
+            adj[i] = new PriorityQueue<>();
+
         }
     }
 
