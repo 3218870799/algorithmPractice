@@ -65,7 +65,23 @@
           <artifactId>fastjson</artifactId>
           <version>1.2.58</version>
       </dependency>
-
+      <!-- https://mvnrepository.com/artifact/junit/junit -->
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.9</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
+          <version>2.6</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-email</artifactId>
+          <version>1.5</version>
+      </dependency>
 
 
   </dependencies>
