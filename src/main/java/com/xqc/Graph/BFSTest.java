@@ -1,7 +1,5 @@
 package com.xqc.Graph;
 
-import java.util.LinkedList;
-
 public class BFSTest {
 
 /*    //对一个节点进行广度优先遍历的方法
@@ -19,6 +17,6 @@ public class BFSTest {
     }
 
 
+*/
 
-
-}*/
+}
