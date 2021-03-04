@@ -21,4 +21,26 @@ public class LeetCode739DailyTemperatures {
         }
         return res;
     }
+    public int[] dailyTemperaturesBaoli(int[] T) {
+        //定义结果数组
+        int[] res = new int[T.length];
+        //遍历每日温度
+        for (int i = 0; i < T.length; i++) {
+            //
+            int j = i + 1;
+            while (j <= T.length-1 && T[i]>=T[j]){
+                j++;
+            }
+            if (j <= T.length -1){
+                res[i] = j-i;
+            }else{
+                res[i] = 0;
+            }
+        }
+        return res;
+    }
+
+
+
+
 }

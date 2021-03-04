@@ -25,8 +25,11 @@ public class LambdaDemo {
 				return Integer.compare(o1,o2);
 			}
 		});
-
+		//使用labbda表达式
 		TreeSet<Integer> set1 = new TreeSet<>((x,y)->Integer.compare(x,y));
+		//使用方法引用
+		TreeSet<Integer> set2 = new TreeSet<>(Integer::compare);
+
 		//语法一：无参无返回值
 		Runnable runnable = new Runnable() {
 			@Override

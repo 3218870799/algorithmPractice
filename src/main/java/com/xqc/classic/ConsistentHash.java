@@ -32,13 +32,9 @@ public class ConsistentHash<T> {
      */
     public ConsistentHash(int numberOfReplicas, Collection<T> nodes) {
         this.numberOfReplicas = numberOfReplicas;
-        this.hashFunc = new HashFunc() {
-
-            @Override
-            public Long hash(Object key) {
+        this.hashFunc = key -> {
 //                return fnv1HashingAlg(key.toString());
-                return md5HashingAlg(key.toString());
-            }
+            return md5HashingAlg(key.toString());
         };
         //初始化节点
         for (T node : nodes) {

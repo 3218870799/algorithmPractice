@@ -6,6 +6,10 @@
 
 # 一：Java深入理解与源码分析
 
+为方便管理，此部分​​已迁移整理至Github项目-Note ——Java基础，欢迎浏览提出建议
+
+:athletic_shoe:建议下载使用Typora软件进行查看与编辑，效果更佳哦！
+
 ## 1:基本的程序设计结构 :traffic_light:
 ### 数据类型
 

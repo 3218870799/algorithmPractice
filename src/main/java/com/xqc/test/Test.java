@@ -1,12 +1,17 @@
 package com.xqc.test;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-
 public class Test {
 	public static void main(String[] args) {
+/*		ArrayBlockingQueue workQueue = new ArrayBlockingQueue<>();
+		ThreadPoolExecutor a = new ThreadPoolExecutor(5,8,20, TimeUnit.MILLISECONDS,workQueue);
+		a.execute();*/
+
+
+
+/*		System.out.printf("Hello World");
+		String[] re = "He/ll/oWord/".split("/");
+		"He/ll/oWord/".indexOf('/',0);*/
+
 /*		int i=0;
 		while(i<10){
 			System.out.println(++i);

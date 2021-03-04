@@ -1,11 +1,5 @@
 package com.leetcode.Graph.medium;
 
-import javafx.beans.binding.MapExpression;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 /**
  * @ClassName cloneGraphSolution
  * @Author Administrator
@@ -13,7 +7,7 @@ import java.util.List;
  * @Description TODO
  */
 public class cloneGraphSolution {
-    private static MapExpression<Node, Node> map;
+    /*private static MapExpression<Node, Node> map;
 
     public static void main(String[] args) {
 
@@ -26,12 +20,12 @@ public class cloneGraphSolution {
     }
 
     private static void dfs(Node node) {
- /*       for (Node n:node.neighbors) {
+ *//*       for (Node n:node.neighbors) {
             if(!map.containsKey(n)){
                 Node t = new Node(n.val,)
             }
 
-        }*/
+        }*//*
     }
 
 
@@ -50,5 +44,5 @@ public class cloneGraphSolution {
             val = _val;
             neighbors = _neighbors;
         }
-    }
+    }*/
 }

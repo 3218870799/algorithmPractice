@@ -1,8 +1,7 @@
 package com.xqc.classic;
 
-import java.awt.Point;
+import java.awt.*;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class HorseChessboard {
 
@@ -122,24 +121,19 @@ public class HorseChessboard {
 
 	//根据当前这个一步的所有的下一步的选择位置，进行非递减排序, 减少回溯的次数
 	public static void sort(ArrayList<Point> ps) {
-		ps.sort(new Comparator<Point>() {
-
-			@Override
-			public int compare(Point o1, Point o2) {
-				// TODO Auto-generated method stub
-				//获取到o1的下一步的所有位置个数
-				int count1 = next(o1).size();
-				//获取到o2的下一步的所有位置个数
-				int count2 = next(o2).size();
-				if(count1 < count2) {
-					return -1;
-				} else if (count1 == count2) {
-					return 0;
-				} else {
-					return 1;
-				}
+		ps.sort((o1, o2) -> {
+			// TODO Auto-generated method stub
+			//获取到o1的下一步的所有位置个数
+			int count1 = next(o1).size();
+			//获取到o2的下一步的所有位置个数
+			int count2 = next(o2).size();
+			if(count1 < count2) {
+				return -1;
+			} else if (count1 == count2) {
+				return 0;
+			} else {
+				return 1;
 			}
-			
 		});
 	}
 }
